@@ -13,7 +13,7 @@ jobs:
       - name: install npn nodesJs
         uses: actions/checkout@v3
         with:
-          node-version: '24'
+          node-version: '20'
       - name: install dependencies
         run: npm ci 
       - name: run tests
@@ -27,7 +27,7 @@ jobs:
       - name: install npm nodeJs
         uses: actions/checkout@v3
         with:
-          node-version: '24'
+          node-version: '20'
       - name: install dependenices
         run: npm ci
       - name: build project
