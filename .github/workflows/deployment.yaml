@@ -11,7 +11,7 @@ jobs:
       - name: get code
         uses: actions/checkout@v6
       - name: install npn nodesJs
-        uses: actions/checkout@v3
+        uses: actions/setup-node@v3
         with:
           node-version: '24'
       - name: install dependencies
@@ -25,9 +25,9 @@ jobs:
       - name: get code
         uses: actions/checkout@v6
       - name: install npm nodeJs
-        uses: actions/checkout@v3
+        uses: actions/setup-node@v3
         with:
-          node-version: '24'
+          node_version: '24'
       - name: install dependenices
         run: npm ci
       - name: build project
